@@ -1,12 +1,12 @@
-import React from "react";
-import Home from "./pages/Home";
+import React from 'react'
+import Home from './Pages/Home'
 
 function App() {
   return (
-    <div className="font-inter text-gray-900 bg-white">
+    <div>
       <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

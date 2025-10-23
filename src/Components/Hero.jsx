@@ -1,23 +1,42 @@
 import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import "./Hero.css";
+import TopoMap from "./TopoMap";
 
-const Hero = () => (
-  <section className="flex flex-col items-center justify-center min-h-screen text-center px-4 bg-[url('/assets/images/hero-bg.jpg')] bg-cover bg-center">
-    <h1 className="text-4xl md:text-6xl font-bold mb-4">
-      Building products where data, design, and purpose meet.
-    </h1>
-    <p className="max-w-xl text-lg mb-8">
-      I’m a web developer and product strategist with a background in business,
-      sustainability, and outdoor adventure.
-    </p>
-    <div className="flex gap-4">
-      <a href="#projects" className="bg-green-600 text-white px-6 py-3 rounded-lg">
-        View My Work
-      </a>
-      <a href="#contact" className="border border-green-600 px-6 py-3 rounded-lg">
-        Contact Me
-      </a>
-    </div>
-  </section>
-);
+const Hero = () => {
+  const { scrollY } = useScroll();
+  const background = useTransform(
+    scrollY,
+    [0, 500],
+    ["rgba(31, 93, 84, 0.1)", "rgba(252, 252, 252, 1)"]
+  );
+
+  return (
+    <motion.section
+      className="hero"
+      style={{ backgroundColor: background }}
+    >
+      <motion.div
+        className="hero-content"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="hero-title">Explore New Heights</h1>
+        <p className="hero-subtitle">
+          Harness tools, insights, and design to elevate your product experience.
+        </p>
+        <motion.button
+          className="hero-button"
+          whileHover={{ scale: 1.05, y: -2 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          Get Started
+        </motion.button>
+      </motion.div>
+      <TopoMap />
+    </motion.section>
+  );
+};
 
 export default Hero;

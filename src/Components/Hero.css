@@ -1,0 +1,85 @@
+:root {
+  --forest-green: #184D47;
+  --rust-orange: #C96333;
+  --charcoal: #222222;
+  --off-white: #FCFCFC;
+}
+
+.hero {
+  background-color: var(--charcoal) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  color: var(--off-white);
+  flex-direction: column;
+  text-align: center;
+  z-index: 0; 
+  width: 100%;
+  height: 100vh;
+}
+
+/* Topo background overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3s; /* transparency */
+  z-index: -1; /* behind content */
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-button {
+  padding: 1rem 2rem;
+  background-color: var(--forest-green);
+  color: var(--off-white);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  border-bottom: 2px solid var(--rust-orange);
+  box-shadow: 0 6px 20px rgba(24, 77, 71, 0.25);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
