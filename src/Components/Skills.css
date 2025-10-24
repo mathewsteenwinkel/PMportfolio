@@ -1,0 +1,337 @@
+:root {
+          --forest-green: #184D47;
+          --rust-orange: #C96333;
+          --charcoal: #222222;
+          --off-white: #FCFCFC;
+        }
+
+        .skills-container {
+          min-height: 100vh;
+          background: linear-gradient(135deg, var(--forest-green) 0%, #0d3832 100%);
+          padding: 60px 24px;
+        }
+
+        .skills-content {
+          max-width: 1400px;
+          margin: 0 auto;
+        }
+
+        /* Header */
+        .skills-header {
+          text-align: center;
+          margin-bottom: 56px;
+        }
+
+        .main-title {
+          font-size: 56px;
+          font-weight: 800;
+          color: var(--off-white);
+          margin-bottom: 16px;
+          letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+          font-size: 20px;
+          color: rgba(252, 252, 252, 0.85);
+          font-weight: 400;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          gap: 28px;
+          margin-bottom: 48px;
+        }
+
+        .skill-category-card {
+          background: var(--off-white);
+          border-radius: 24px;
+          padding: 36px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          border: 2px solid transparent;
+        }
+
+        .skill-category-card:hover {
+          transform: translateY(-12px);
+          box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4);
+          border-color: var(--rust-orange);
+        }
+
+        /* Category Header */
+        .category-header {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 32px;
+          padding-bottom: 20px;
+          border-bottom: 3px solid #e8e8e8;
+        }
+
+        .icon-wrapper {
+          width: 56px;
+          height: 56px;
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+        }
+
+        .product-icon {
+          background: linear-gradient(135deg, var(--forest-green), #2d7a6e);
+        }
+
+        .technical-icon {
+          background: linear-gradient(135deg, var(--rust-orange), #e07b4d);
+        }
+
+        .design-icon {
+          background: linear-gradient(135deg, var(--charcoal), #3d3d3d);
+        }
+
+        .skill-category-card:hover .icon-wrapper {
+          transform: rotate(10deg) scale(1.1);
+        }
+
+        .header-icon {
+          width: 28px;
+          height: 28px;
+          color: var(--off-white);
+        }
+
+        .category-title {
+          font-size: 26px;
+          font-weight: 700;
+          color: var(--charcoal);
+          letter-spacing: -0.01em;
+        }
+
+        /* Skills List */
+        .skills-list {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .skill-item {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .skill-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .skill-name {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--charcoal);
+          letter-spacing: -0.01em;
+        }
+
+        .skill-level {
+          font-size: 15px;
+          font-weight: 700;
+          color: var(--forest-green);
+          font-family: 'Monaco', 'Courier New', monospace;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+          height: 10px;
+          background: #e8e8e8;
+          border-radius: 999px;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .progress-fill {
+          height: 100%;
+          border-radius: 999px;
+          transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .progress-fill::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent
+          );
+          animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+
+        .product-fill {
+          background: linear-gradient(90deg, var(--forest-green), #2d7a6e);
+        }
+
+        .technical-fill {
+          background: linear-gradient(90deg, var(--rust-orange), #e07b4d);
+        }
+
+        .design-fill {
+          background: linear-gradient(90deg, var(--charcoal), #3d3d3d);
+        }
+
+        /* Summary Stats */
+        .summary-stats {
+          background: var(--off-white);
+          border-radius: 24px;
+          padding: 40px 48px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border: 2px solid var(--rust-orange);
+        }
+
+        .stat-item {
+          text-align: center;
+        }
+
+        .stat-number {
+          font-size: 48px;
+          font-weight: 800;
+          background: linear-gradient(135deg, var(--forest-green), var(--rust-orange));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          margin-bottom: 8px;
+          letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--charcoal);
+          opacity: 0.7;
+        }
+
+        .stat-divider {
+          width: 2px;
+          height: 60px;
+          background: linear-gradient(to bottom, transparent, #e8e8e8, transparent);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .skill-category-card {
+          animation: fadeIn 0.6s ease backwards;
+        }
+
+        .skill-category-card:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+
+        .skill-category-card:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        .skill-category-card:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+
+        .summary-stats {
+          animation: fadeIn 0.6s ease 0.4s backwards;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+          .skills-grid {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          }
+        }
+
+        @media (max-width: 768px) {
+          .skills-container {
+            padding: 40px 16px;
+          }
+
+          .main-title {
+            font-size: 40px;
+          }
+
+          .subtitle {
+            font-size: 16px;
+          }
+
+          .skills-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .skill-category-card {
+            padding: 28px;
+          }
+
+          .category-title {
+            font-size: 22px;
+          }
+
+          .summary-stats {
+            flex-direction: column;
+            gap: 32px;
+            padding: 32px;
+          }
+
+          .stat-divider {
+            width: 60px;
+            height: 2px;
+          }
+
+          .stat-number {
+            font-size: 40px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .main-title {
+            font-size: 32px;
+          }
+
+          .skill-name {
+            font-size: 14px;
+          }
+
+          .skill-level {
+            font-size: 13px;
+          }
+
+          .icon-wrapper {
+            width: 48px;
+            height: 48px;
+          }
+
+          .header-icon {
+            width: 24px;
+            height: 24px;
+          }
+        }
