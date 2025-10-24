@@ -4,6 +4,7 @@ import Hero from '../Components/Hero'
 import About from '../Components/About'
 import BackLog from '../Components/BackLog'
 import Skills from '../Components/Skills'
+import CaseStudys from '../Components/CaseStudyCard'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <About />
       <BackLog />
       <Skills/>
+      <CaseStudys />
     </div>
   )
 }

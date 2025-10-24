@@ -1,0 +1,69 @@
+.case-studies {
+  padding: 5rem 2rem;
+  background-color: var(--off-white);
+  text-align: center;
+}
+
+.case-studies h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--charcoal);
+}
+
+.case-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.case-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.case-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.case-content {
+  padding: 1.5rem;
+}
+
+.case-content h3 {
+  color: var(--forest-green);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-content p {
+  font-size: 1rem;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.case-button {
+  display: inline-block;
+  color: white;
+  background-color: var(--rust-orange);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.case-button:hover {
+  background-color: #b75324;
+}
