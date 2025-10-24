@@ -55,6 +55,7 @@
 
 .hero-button {
   padding: 1rem 2rem;
+  margin: 10px;
   background-color: var(--forest-green);
   color: var(--off-white);
   border: none;
@@ -65,7 +66,7 @@
 }
 
 .hero-button:hover {
-  border-bottom: 2px solid var(--rust-orange);
+  border-bottom: 2px solid var(--charcoal);
   box-shadow: 0 6px 20px rgba(24, 77, 71, 0.25);
 }
 

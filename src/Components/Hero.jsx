@@ -22,16 +22,22 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="hero-title">Explore New Heights</h1>
-        <p className="hero-subtitle">
-          Harness tools, insights, and design to elevate your product experience.
+        <h1 className="hero-title">Turning Ideas into Impact</h1>
+        <p className="hero-subtitle">A product manager who bridges strategy, design, and execution. I help teams define the right problems, build solutions that matter, and deliver measurable results.
         </p>
         <motion.button
           className="hero-button"
           whileHover={{ scale: 1.05, y: -2 }}
           whileTap={{ scale: 0.98 }}
         >
-          Get Started
+          Portfolio
+        </motion.button>
+        <motion.button
+          className="hero-button"
+          whileHover={{ scale: 1.05, y: -2 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          Download Resume
         </motion.button>
       </motion.div>
       <TopoMap />
