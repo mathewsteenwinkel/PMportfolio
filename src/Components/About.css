@@ -29,6 +29,51 @@
   margin-top: 2rem;
 }
 
-.three-icons-container{
-  
-}
+.strengths {
+        padding: 80px 20px;
+        background: white;
+    }
+
+    .strengths h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 60px;
+        color: #1a202c;
+    }
+
+    .strengths-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .strength-card {
+        padding: 30px;
+        border-radius: 12px;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .strength-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .strength-card .icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .strength-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #1a202c;
+    }
+
+    .strength-card p {
+        color: #4b5563;
+        line-height: 1.7;
+    }

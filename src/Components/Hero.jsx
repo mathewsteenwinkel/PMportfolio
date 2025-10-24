@@ -23,7 +23,8 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="hero-title">Turning Ideas into Impact</h1>
-        <p className="hero-subtitle">A product manager who bridges strategy, design, and execution. I help teams define the right problems, build solutions that matter, and deliver measurable results.
+        <p className="hero-subtitle">A product manager who bridges strategy, design, and execution. <br/ >
+          I help teams define the right problems, build solutions that matter, and deliver measurable results.
         </p>
         <motion.button
           className="hero-button"
