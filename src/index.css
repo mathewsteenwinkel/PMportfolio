@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Make body and root take full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* App container to fill height */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
