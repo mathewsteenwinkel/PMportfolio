@@ -1,0 +1,124 @@
+:root {
+  --forest-green: #184D47;
+  --rust-orange: #C96333;
+  --charcoal: #222222;
+  --off-white: #FCFCFC;
+}
+
+.metrics-wrapper {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(135deg, var(--forest-green) 0%, #1a5850 100%);
+}
+
+.metrics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metrics-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.metrics-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--off-white);
+  margin-bottom: 1rem;
+}
+
+.metrics-subtitle {
+  font-size: 1.125rem;
+  color: var(--off-white);
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metric-card {
+  background-color: rgba(252, 252, 252, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 252, 252, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.metric-card:hover {
+  background-color: rgba(252, 252, 252, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.metric-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--rust-orange);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.metric-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--off-white);
+}
+
+.metric-content {
+  width: 100%;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--off-white);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--off-white);
+  margin-bottom: 0.5rem;
+}
+
+.metric-description {
+  font-size: 0.9rem;
+  color: var(--off-white);
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.metrics-footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(252, 252, 252, 0.2);
+}
+
+.metrics-note {
+  font-size: 0.9rem;
+  color: var(--off-white);
+  opacity: 0.7;
+  font-style: italic;
+}

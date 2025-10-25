@@ -1,0 +1,205 @@
+:root {
+  --forest-green: #184D47;
+  --rust-orange: #C96333;
+  --charcoal: #222222;
+  --off-white: #FCFCFC;
+}
+
+.methodology-wrapper {
+  padding: 6rem 1.5rem;
+  background-color: var(--off-white);
+}
+
+.methodology-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.methodology-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.methodology-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.methodology-subtitle {
+  font-size: 1.125rem;
+  color: var(--charcoal);
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.methodology-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Philosophy Card */
+.philosophy-card {
+  background: linear-gradient(135deg, var(--forest-green) 0%, #1a5850 100%);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  color: var(--off-white);
+}
+
+.philosophy-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--off-white);
+}
+
+.philosophy-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+.philosophy-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.principle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(252, 252, 252, 0.1);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(252, 252, 252, 0.2);
+}
+
+.principle-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--rust-orange);
+  min-width: 3rem;
+}
+
+.principle-text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Frameworks Section */
+.methodology-frameworks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .methodology-frameworks {
+    grid-template-columns: 1fr;
+  }
+}
+
+.framework-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(24, 77, 71, 0.1);
+}
+
+.framework-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(24, 77, 71, 0.15);
+}
+
+.framework-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.framework-icon-wrapper.agile {
+  background-color: var(--forest-green);
+}
+
+.framework-icon-wrapper.waterfall {
+  background-color: var(--rust-orange);
+}
+
+.framework-icon-wrapper.certification {
+  background-color: var(--charcoal);
+}
+
+.framework-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--off-white);
+}
+
+.framework-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.framework-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+  opacity: 0.8;
+}
+
+/* Certification Highlight */
+.certification-highlight {
+  border: 2px solid var(--rust-orange);
+  background: linear-gradient(135deg, rgba(201, 99, 51, 0.05) 0%, rgba(24, 77, 71, 0.05) 100%);
+}
+
+.certification-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--forest-green);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+}
+
+.badge-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--rust-orange);
+  flex-shrink: 0;
+}
+
+.badge-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.badge-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--off-white);
+  margin: 0;
+}
+
+.badge-subtitle {
+  font-size: 0.9rem;
+  color: var(--off-white);
+  opacity: 0.8;
+  margin: 0;
+}

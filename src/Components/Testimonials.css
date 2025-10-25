@@ -1,0 +1,120 @@
+:root {
+  --forest-green: #184D47;
+  --rust-orange: #C96333;
+  --charcoal: #222222;
+  --off-white: #FCFCFC;
+}
+
+.testimonials-wrapper {
+  padding: 6rem 1.5rem;
+  background-color: var(--off-white);
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.testimonials-subtitle {
+  font-size: 1.125rem;
+  color: var(--charcoal);
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(24, 77, 71, 0.1);
+  position: relative;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(24, 77, 71, 0.15);
+}
+
+.quote-icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--forest-green);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--off-white);
+}
+
+.testimonial-quote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  border-top: 2px solid var(--rust-orange);
+  padding-top: 1.5rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.author-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin: 0;
+}
+
+.author-role {
+  font-size: 0.95rem;
+  color: var(--forest-green);
+  font-weight: 500;
+  margin: 0;
+}
+
+.author-company {
+  font-size: 0.875rem;
+  color: var(--charcoal);
+  opacity: 0.6;
+  margin: 0;
+}
