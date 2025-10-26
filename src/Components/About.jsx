@@ -1,9 +1,11 @@
 import React from "react";
 import "./About.css";
+import FadeSlideIn from "./FadeIn";
 
 
 const About = () => {
   return (
+    <FadeSlideIn>
     <section className="about-me">
       <div className="about-me-content">
         <h2>About Me</h2>
@@ -47,6 +49,7 @@ const About = () => {
       </div>
 
     </section>
+    </FadeSlideIn>
   );
 };
 

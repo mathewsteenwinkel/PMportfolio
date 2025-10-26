@@ -64,7 +64,7 @@ export default function ContactCTA() {
               </a>
 
               <a 
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/mathew-steenwinkel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`cta-button secondary ${linkedinHovered ? 'hovered' : ''}`}

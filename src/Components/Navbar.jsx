@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -11,11 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -26,9 +22,16 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         {/* Logo / Brand */}
-        <Link to="/" className="nav-logo" onClick={closeMenu}>
-          Mathew Steenwinkel
-        </Link>
+        <NavLink
+            to="/"
+            className="nav-logo"
+            onClick={() => {
+              closeMenu();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            Mathew Steenwinkel
+          </NavLink>
 
         {/* Hamburger Icon */}
         <div
@@ -43,12 +46,16 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`nav-links ${isOpen ? "active" : ""}`}>
-          <NavLink to="/" onClick={closeMenu}>
-            Home
-          </NavLink>
-          <NavLink to="/about" onClick={closeMenu}>
-            About
-          </NavLink>
+        
+          <a href="#past-work" onClick={closeMenu}>
+            Past Work
+          </a>
+          <a href="#skills" onClick={closeMenu}>
+            Skills
+          </a>
+          <a href="#contact" onClick={closeMenu}>
+            Contact
+          </a>
           <NavLink to="/case-studies/onboarding" onClick={closeMenu}>
             Case Studies
           </NavLink>

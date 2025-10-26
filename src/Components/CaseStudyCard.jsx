@@ -17,7 +17,7 @@ const caseStudies = [
     description:
       "Led a cross-functional team to prioritize mobile app features using data-driven frameworks and user feedback.",
     image: "/Images/mobileapp.jpg",
-    link: "/case-studies/feature-prioritization",
+    link: "/case-studies/giclee",
   },
   {
     id: 3,

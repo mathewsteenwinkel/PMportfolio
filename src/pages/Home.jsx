@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import Hero from '../Components/Hero'
 import About from '../Components/About'
 import BackLog from '../Components/BackLog'
@@ -13,16 +14,24 @@ import Awareness from '../Components/Awareness'
 function Home() {
   return (
     <div>
+      <section id="/">
       <Hero />
+      </section>
       <About />
       <Testimonials />
-      <Metrics/>
+      <Metrics />
+      <section id="past-work">
       <BackLog />
-      <Skills/>
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
       <Methodology />
       <CaseStudys />
       <Awareness />
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   )
 }

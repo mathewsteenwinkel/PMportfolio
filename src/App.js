@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Pages
 import Home from "./Pages/Home";
 
 // Case Studies
 import OnBoardingCaseStudies from "./Pages/CaseStudies/OnBoardingCaseStudy";
+import GicleeCaseStudies from "./Pages/CaseStudies/GicleeCaseStudy";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
        
         <Route path="/case-studies/onboarding" element={<OnBoardingCaseStudies />} />
+        <Route path="/case-studies/giclee" element={<GicleeCaseStudies />} />
       </Routes>
       <Footer />
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Lightbulb, Palette, CheckCircle, Database, FileText, Users, TrendingUp, Target, GitBranch } from 'lucide-react';
+import { Code, Lightbulb, Palette } from 'lucide-react';
 import './Skills.css';
 
 const SkillsModernCards = () => {
