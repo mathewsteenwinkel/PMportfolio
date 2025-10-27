@@ -91,7 +91,7 @@
 }
 
 .feature-card {
-  background-color: rgba(252, 252, 252, 0.1);
+  background-color: rgba(252, 252, 252, 0.087) !important;
   backdrop-filter: blur(10px);
   border-radius: 1rem;
   padding: 2rem;
@@ -124,7 +124,7 @@
 .feature-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--off-white);
+  color: var(--off-white) !important;
   margin-bottom: 0.75rem;
 }
 

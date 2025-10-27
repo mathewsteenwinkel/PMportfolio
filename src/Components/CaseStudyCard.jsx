@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./CaseStudy.css";
+import Barn from "../Images/Barn.webp";
 
 const caseStudies = [
   {
@@ -13,10 +14,10 @@ const caseStudies = [
   },
   {
     id: 2,
-    title: "Mobile App Feature Prioritization",
+    title: "Product Creation for Carter Ryan Gallery",
     description:
-      "Led a cross-functional team to prioritize mobile app features using data-driven frameworks and user feedback.",
-    image: "/Images/mobileapp.jpg",
+      "Led a cross-functional team to develop a limited-edition giclée line, achieving $100K in revenue within four months.",
+    image: Barn,
     link: "/case-studies/giclee",
   },
   {

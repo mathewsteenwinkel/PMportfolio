@@ -83,7 +83,7 @@ body {
 }
 
 .p-6 {
-  padding: 1.5rem;
+  padding-top: 3rem;
 }
 
 .max-w-7xl {
@@ -99,6 +99,11 @@ body {
    HEADER SECTION
    ============================================ */
 .bg-white {
+  background-color: var(--white);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.bg-white2 {
   background-color: var(--white);
 }
 

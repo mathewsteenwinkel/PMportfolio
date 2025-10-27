@@ -2,12 +2,11 @@
   --forest-green: #184D47;
   --rust-orange: #C96333;
   --charcoal: #222222;
-  --off-white: #FCFCFC;
 }
 
 .testimonials-wrapper {
   padding: 6rem 1.5rem;
-  background-color: var(--off-white);
+  background-color: #f9f9f9;
 }
 
 .testimonials-container {
@@ -48,7 +47,7 @@
 }
 
 .testimonial-card {
-  background-color: white;
+  background-color: f9f9f9;
   border-radius: 1rem;
   padding: 2.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);

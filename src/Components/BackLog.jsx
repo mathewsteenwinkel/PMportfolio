@@ -342,7 +342,7 @@ const ProductBacklog = () => {
         {/* Epics */}
         <div className="space-y-4">
           {filteredEpics.map((epic) => (
-            <div key={epic.id} className="bg-white rounded-xl shadow-md overflow-hidden">
+            <div key={epic.id} className="bg-white2 rounded-xl shadow-md overflow-hidden">
               {/* Epic Header */}
               <button
                 onClick={() => toggleEpic(epic.id)}

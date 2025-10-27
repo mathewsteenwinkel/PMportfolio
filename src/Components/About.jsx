@@ -24,7 +24,7 @@ const About = () => {
           <p>When I'm not building products, you'll find me on a climbing wall or exploring the Canadian Rockies—always looking for the next challenge to tackle.</p>
         </div>
 
-      <div class="container">
+      <div class="about-container">
         <h2>Core Strengths</h2>
         <div class="strengths-grid">
             <div class="strength-card">
