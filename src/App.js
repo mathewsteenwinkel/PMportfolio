@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 // Case Studies
 import OnBoardingCaseStudies from "./Pages/CaseStudies/OnBoardingCaseStudy";
 import GicleeCaseStudies from "./Pages/CaseStudies/GicleeCaseStudy";
+import Carmella from "./Pages/CaseStudies/Carmella";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
@@ -22,6 +23,7 @@ function App() {
        
         <Route path="/case-studies/onboarding" element={<OnBoardingCaseStudies />} />
         <Route path="/case-studies/giclee" element={<GicleeCaseStudies />} />
+        <Route path="/case-studies/Carmella" element={<Carmella />} />
       </Routes>
       <Footer />
     </>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './OnBoardingCaseStudies.css';
+import CaseStudyNav from "./CaseStudyNav";
 
 export default function CaseStudy() {
   const [activeSection, setActiveSection] = useState('summary');
@@ -14,8 +15,9 @@ export default function CaseStudy() {
 
   return (
     <div className="case-study">
+      <CaseStudyNav />
       {/* Hero Section */}
-      <div className="heroCase">
+      <div className="heroCase1">
         <div className="container">
           <div className="hero-label">Case Study</div>
           <h1 className="hero-title">

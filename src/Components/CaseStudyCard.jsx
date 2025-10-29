@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CaseStudy.css";
 import Barn from "../Images/Barn.webp";
+import Carmella from "../Images/Carmella.webp";
+import Run from "../Images/Run.webp";
 
 const caseStudies = [
   {
@@ -9,7 +11,7 @@ const caseStudies = [
     title: "Improving Onboarding for SaaS Users",
     description:
       "Redesigned the onboarding flow for a SaaS platform to reduce churn and increase activation rates by 25%.",
-    image: "/Images/onboarding.jpg",
+    image: Run,
     link: "/case-studies/onboarding",
   },
   {
@@ -25,8 +27,8 @@ const caseStudies = [
     title: "Optimizing E-Commerce Checkout",
     description:
       "Developed hypotheses and experiments that reduced cart abandonment and improved conversion rate by 18%.",
-    image: "/Images/ecommerce.jpg",
-    link: "/case-studies/checkout-optimization",
+    image: Carmella,
+    link: "/case-studies/Carmella",
   },
 ];
 

@@ -18,11 +18,11 @@
 }
 
 /* ---------- Hero Section ---------- */
-.heroCase2 {
-  position: relative;
-  background-image: url("../../Images/Barn.webp");
-  background-size: cover;
-  background-position: center;
+.heroCase3 {
+   position: relative;
+  background-image: url("../../Images/Carmella.webp");
+  background-size: contain;
+  background-position: top;
   background-attachment: fixed; /* Parallax effect */
   height: 85vh;
   display: flex;
@@ -32,15 +32,15 @@
   overflow: hidden;
 }
 
-.heroCase2::before {
+.heroCase3::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay to tone down image */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-.heroCase2 .container {
+.heroCase3 .container {
   position: relative;
   z-index: 2;
   text-align: center;
@@ -67,7 +67,7 @@
   font-size: 20px;
   color: #cbd5e1;
   max-width: 800px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 }
 
 /* ---------- Key Metrics ---------- */
@@ -238,8 +238,8 @@
 
 /* ---------- Approach Section ---------- */
 .approach-section {
-  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-  border: 1px solid #10b981;
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  border: 1px solid #ec4899;
   border-radius: 12px;
   padding: 32px;
   margin: 32px 0;
@@ -260,7 +260,7 @@
 
 .feature-title {
   font-weight: 600;
-  color: #065f46;
+  color: #9f1239;
   margin-bottom: 4px;
   font-size: 16px;
 }
@@ -315,6 +315,10 @@
   margin-bottom: 16px;
 }
 
+.operations-item:last-child {
+  margin-bottom: 0;
+}
+
 .check-icon {
   width: 24px;
   height: 24px;
@@ -331,7 +335,7 @@
 
 /* Results Section */
 .results-hero {
-  background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
   border-radius: 12px;
   padding: 32px;
   color: white;
@@ -360,7 +364,7 @@
 
 .result-label {
   font-size: 14px;
-  color: #d1fae5;
+  color: #fce7f3;
 }
 
 /* Impact Grid */
@@ -411,10 +415,14 @@
   margin-bottom: 24px;
 }
 
+.efficiency-item:last-child {
+  margin-bottom: 0;
+}
+
 .efficiency-icon {
   width: 48px;
   height: 48px;
-  background: #d1fae5;
+  background: #fce7f3;
   border-radius: 8px;
   flex-shrink: 0;
   display: flex;
@@ -442,20 +450,20 @@
 
 .lesson-card {
   background: white;
-  border: 2px solid #d1fae5;
+  border: 2px solid #fce7f3;
   border-radius: 12px;
   padding: 24px;
   transition: box-shadow 0.3s;
 }
 
 .lesson-card:hover {
-  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.2);
 }
 
 .lesson-number {
   width: 48px;
   height: 48px;
-  background: #d1fae5;
+  background: #fce7f3;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -463,6 +471,7 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
+  color: #9f1239;
 }
 
 .lesson-card h3 {
@@ -483,6 +492,11 @@
   margin-top: 48px;
 }
 
+.conclusion h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+
 .conclusion p {
   color: #cbd5e1;
   font-size: 18px;
@@ -496,11 +510,24 @@
     font-size: 32px;
   }
 
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
   .section h2 {
     font-size: 28px;
   }
 
   .metrics {
     grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    gap: 16px;
+  }
+
+  .nav-button {
+    font-size: 14px;
+    padding: 12px 8px;
   }
 }

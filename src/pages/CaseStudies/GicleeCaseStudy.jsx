@@ -1,6 +1,7 @@
 // CaseStudy.jsx
 import React, { useState } from 'react';
 import './GicleeCaseStudy.css';
+import CaseStudyNav from "./CaseStudyNav";
 
 export default function CaseStudy() {
   const [activeSection, setActiveSection] = useState('summary');
@@ -15,8 +16,9 @@ export default function CaseStudy() {
 
   return (
     <div className="case-study">
+      <CaseStudyNav />
       {/* Hero Section */}
-      <div className="heroCase">
+      <div className="heroCase2">
         <div className="hero-background">
         <div className="container">
           <div className="hero-label">Case Study</div>

@@ -18,7 +18,7 @@
 }
 
 /* ---------- Hero Section ---------- */
-.heroCase {
+.heroCase1 {
   position: relative;
   background-image: url("../../Images/Run.webp");
   background-size: cover;
@@ -32,7 +32,7 @@
   overflow: hidden;
 }
 
-.heroCase::before {
+.heroCase1::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -40,7 +40,7 @@
   z-index: 1;
 }
 
-.heroCase .container {
+.heroCase1 .container {
   position: relative;
   z-index: 2;
   text-align: center;

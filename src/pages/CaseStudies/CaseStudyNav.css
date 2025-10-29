@@ -1,0 +1,61 @@
+.case-study-nav {
+  position: sticky;
+  top: 65px; /* match your main navbar height */
+  z-index: 45; /* slightly below main nav’s z-index */
+  backdrop-filter: blur(8px);
+  background-color: rgba(250, 250, 250, 0.85);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.case-study-nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+}
+
+.case-study-nav-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.case-nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.4rem 0;
+  transition: color 0.25s ease;
+}
+
+.case-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #c96333;
+  transition: width 0.25s ease;
+}
+
+.case-nav-link:hover {
+  color: #0f172a;
+}
+
+.case-nav-link:hover::after {
+  width: 100%;
+}
+
+.case-nav-link.active {
+  color: #c96333;
+}
+
+.case-nav-link.active::after {
+  width: 100%;
+}
