@@ -16,7 +16,8 @@ export default function CaseStudy() {
   return (
     <div className="case-study">
       {/* Hero Section */}
-      <div className="hero">
+      <div className="heroCase">
+        <div className="hero-background">
         <div className="container">
           <div className="hero-label">Case Study</div>
           <h1 className="hero-title">
@@ -42,6 +43,7 @@ export default function CaseStudy() {
             </div>
           </div>
         </div>
+      </div>
       </div>
 
       {/* Navigation */}

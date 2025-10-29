@@ -1,5 +1,3 @@
-/* CaseStudy.css */
-
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +17,34 @@
   padding: 0 24px;
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+/* ---------- Hero Section ---------- */
+.heroCase {
+  position: relative;
+  background-image: url("../../Images/Barn.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 80px 24px;
+  overflow: hidden;
+}
+
+.heroCase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to tone down image */
+  z-index: 1;
+}
+
+.heroCase .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
 }
 
 .hero-label {
@@ -49,6 +70,7 @@
   margin-bottom: 48px;
 }
 
+/* ---------- Key Metrics ---------- */
 .metrics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -76,7 +98,7 @@
   color: #cbd5e1;
 }
 
-/* Navigation */
+/* ---------- Navigation ---------- */
 .nav-bar {
   background: white;
   border-bottom: 1px solid #e2e8f0;
@@ -114,7 +136,7 @@
   border-bottom-color: #10b981;
 }
 
-/* Content */
+/* ---------- Content ---------- */
 .content {
   padding: 48px 0;
 }
@@ -158,7 +180,7 @@
   margin-top: 48px;
 }
 
-/* Overview Grid */
+/* ---------- Overview Grid ---------- */
 .overview-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -182,7 +204,7 @@
   color: #1e293b;
 }
 
-/* Challenge Grid */
+/* ---------- Challenge Grid ---------- */
 .challenge-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -214,7 +236,7 @@
   font-size: 24px;
 }
 
-/* Approach Section */
+/* ---------- Approach Section ---------- */
 .approach-section {
   background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
   border: 1px solid #10b981;
@@ -291,10 +313,6 @@
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 16px;
-}
-
-.operations-item:last-child {
-  margin-bottom: 0;
 }
 
 .check-icon {
@@ -393,10 +411,6 @@
   margin-bottom: 24px;
 }
 
-.efficiency-item:last-child {
-  margin-bottom: 0;
-}
-
 .efficiency-icon {
   width: 48px;
   height: 48px;
@@ -476,7 +490,7 @@
   margin: 0;
 }
 
-/* Responsive */
+/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 32px;
