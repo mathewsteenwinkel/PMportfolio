@@ -227,7 +227,7 @@
 .icon-box {
   width: 48px;
   height: 48px;
-  background: #fee2e2;
+  background: #ffffff00;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -238,8 +238,6 @@
 
 /* ---------- Approach Section ---------- */
 .approach-section {
-  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
-  border: 1px solid #ec4899;
   border-radius: 12px;
   padding: 32px;
   margin: 32px 0;
@@ -267,7 +265,6 @@
 
 .feature-text {
   font-size: 14px;
-  color: #64748b;
 }
 
 /* Collaboration Cards */
@@ -335,12 +332,19 @@
 
 /* Results Section */
 .results-hero {
-  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #000000 0%, #8b5cf6 100%);
   border-radius: 12px;
   padding: 32px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 32px 0;
 }
+
+.results-hero h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+
+
 
 .results-grid {
   display: grid;
@@ -364,7 +368,7 @@
 
 .result-label {
   font-size: 14px;
-  color: #fce7f3;
+  color: #ffffff;
 }
 
 /* Impact Grid */
@@ -457,13 +461,13 @@
 }
 
 .lesson-card:hover {
-  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.2);
+  box-shadow: 0 10px 30px rgba(87, 82, 84, 0.2);
 }
 
 .lesson-number {
   width: 48px;
   height: 48px;
-  background: #fce7f3;
+  background: #e9e9e9;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -471,7 +475,7 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #9f1239;
+  color: #000000;
 }
 
 .lesson-card h3 {

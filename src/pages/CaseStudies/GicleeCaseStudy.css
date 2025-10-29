@@ -238,7 +238,7 @@
 
 /* ---------- Approach Section ---------- */
 .approach-section {
-  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+
   border: 1px solid #10b981;
   border-radius: 12px;
   padding: 32px;
@@ -267,7 +267,6 @@
 
 .feature-text {
   font-size: 14px;
-  color: #64748b;
 }
 
 /* Collaboration Cards */

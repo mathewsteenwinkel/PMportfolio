@@ -236,13 +236,18 @@
   font-size: 24px;
 }
 
+
 /* ---------- Approach Section ---------- */
 .approach-section {
-  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  background: #184D47;
   border: 1px solid #10b981;
   border-radius: 12px;
   padding: 32px;
   margin: 32px 0;
+}
+
+.approach-section h3, .approach-section p {
+  color: white !important;
 }
 
 .feature-grid {
@@ -260,14 +265,13 @@
 
 .feature-title {
   font-weight: 600;
-  color: #065f46;
   margin-bottom: 4px;
   font-size: 16px;
 }
 
 .feature-text {
   font-size: 14px;
-  color: #64748b;
+  color: #ffffff !important;
 }
 
 /* Collaboration Cards */
