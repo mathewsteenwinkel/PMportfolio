@@ -3,19 +3,19 @@ import { NavLink } from "react-router-dom";
 import "./CaseStudyNav.css";
 
 export default function CaseStudyNav() {
-  const [offset, setOffset] = useState(50);
+  const [offset, setOffset] = useState(70);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 60) setOffset(40); // compact mode
-      else setOffset(55); // full mode
+      if (window.scrollY > 90) setOffset(50); // compact mode
+      else setOffset(70); // full mode
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const caseStudies = [
-    { name: "SaaS Onboarding", path: "/case-studies/onboarding" },
+    { name: "Web Migration", path: "/case-studies/WebMigration" },
     { name: "Carter Ryan Gallery", path: "/case-studies/giclee" },
     { name: "Carmella Marketing", path: "/case-studies/carmella" },
   ];
