@@ -18,7 +18,6 @@ function Home() {
       <Hero />
       </section>
       <About />
-      <Testimonials />
       <Metrics />
       <section id="past-work">
       <BackLog />

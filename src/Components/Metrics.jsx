@@ -1,44 +1,50 @@
 import React from 'react';
-import { TrendingUp, Users, DollarSign, Zap, Target, Award } from 'lucide-react';
+import { TrendingUp, DollarSign, Users, Zap, Target, Award } from 'lucide-react';
 import './Metrics.css';
 
 export default function Metrics() {
   const metrics = [
     {
       icon: TrendingUp,
-      value: "200%",
-      label: "User Growth",
-      description: "Year-over-year increase"
+      value: "10%",
+      label: "Conversion Increase",
+      description: "Boosted web app conversions at Athlete Tech Group",
+      color: "#1E90FF" // blue for growth
     },
     {
       icon: DollarSign,
-      value: "$2.5M",
+      value: "$100K",
       label: "Revenue Generated",
-      description: "From new product features"
+      description: "Limited-edition product line at Carter-Ryan Gallery",
+      color: "#28A745" // green for money/revenue
     },
     {
       icon: Users,
-      value: "40%",
-      label: "Churn Reduction",
-      description: "Through UX improvements"
+      value: "40+",
+      label: "Community Members",
+      description: "Grew MacEwan University Climbing Club membership",
+      color: "#FFC107" // yellow for people/community
     },
     {
       icon: Zap,
-      value: "60%",
-      label: "Faster Time-to-Market",
-      description: "Optimized delivery process"
+      value: "50%",
+      label: "Delivery Time Reduction",
+      description: "Cut client project timelines at Carmella Marketing",
+      color: "#FF5733" // orange/red for speed/efficiency
     },
     {
       icon: Target,
-      value: "95%",
-      label: "Feature Adoption",
-      description: "Within first quarter"
+      value: "2x",
+      label: "Client Sales Growth",
+      description: "Helped small businesses double online sales with Sinomii",
+      color: "#6F42C1" // purple for achievement/goal
     },
     {
       icon: Award,
-      value: "4.8/5",
-      label: "User Satisfaction",
-      description: "Average product rating"
+      value: "90%",
+      label: "Profit Margin",
+      description: "Achieved on new product lines at Carter-Ryan Gallery",
+      color: "#FFD700" // gold for success/profit
     }
   ];
 
@@ -57,8 +63,8 @@ export default function Metrics() {
             const IconComponent = metric.icon;
             return (
               <div key={index} className="metric-card">
-                <div className="metric-icon-wrapper">
-                  <IconComponent className="metric-icon" />
+                <div className="metric-icon-wrapper" style={{ backgroundColor: metric.color + "20" }}>
+                  <IconComponent className="metric-icon" style={{ color: metric.color }} />
                 </div>
                 <div className="metric-content">
                   <h3 className="metric-value">{metric.value}</h3>
@@ -72,7 +78,7 @@ export default function Metrics() {
 
         <div className="metrics-footer">
           <p className="metrics-note">
-            All metrics represent actual outcomes from products managed between 2020-2024
+            All metrics represent actual outcomes from products and initiatives I've led
           </p>
         </div>
       </div>

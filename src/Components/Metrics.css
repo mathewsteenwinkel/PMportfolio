@@ -42,6 +42,22 @@
   margin-bottom: 3rem;
 }
 
+.metric-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.metric-icon {
+  width: 28px;
+  height: 28px;
+}
+
+
 @media (max-width: 768px) {
   .metrics-grid {
     grid-template-columns: 1fr;

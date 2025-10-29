@@ -18,7 +18,7 @@
   text-align: center;
   z-index: 0; 
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 /* Topo background overlay */
@@ -66,7 +66,6 @@
 }
 
 .hero-button:hover {
-  border-bottom: 2px solid var(--charcoal);
   box-shadow: 0 6px 20px rgba(24, 77, 71, 0.25);
 }
 
