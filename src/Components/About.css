@@ -3,10 +3,13 @@
   background-color: #f9f9f9;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-me-content {
   max-width: 1000px;
+  width: 100%;
+  text-align: center;
 }
 
 .about-me h2 {
@@ -22,58 +25,228 @@
   margin-bottom: 1rem;
 }
 
-.three-icons-container{
+/* Three Icons Layout */
+.three-icons-container {
   display: flex;
   justify-content: center;
   gap: 3rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.three-icons-container .icon {
+  font-size: 2.5rem;
+  color: #184d47;
+  transition: transform 0.3s ease;
+}
+
+.three-icons-container .icon:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .about-me {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-me h2 {
+    font-size: 2rem;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+  }
+
+  .three-icons-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 3rem 1rem;
+  }
+
+  .about-me-content {
+    text-align: left;
+  }
+
+  .about-me h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-me p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .three-icons-container {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-around;
+  }
+
+  .three-icons-container .icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-me h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-me p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .three-icons-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .three-icons-container .icon {
+    font-size: 1.8rem;
+  }
 }
 
 .strengths {
-        padding: 80px 20px;
-        background: white;
-    }
+  padding: 80px 20px;
+  background: white;
+}
 
-    .strengths h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 60px;
-        color: #1a202c;
-    }
+.strengths h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #1a202c;
+}
 
-    .strengths-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 40px;
-        max-width: 1100px;
-        margin: 0 auto;
-    }
+/* Grid layout for cards */
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-    .strength-card {
-        padding: 30px;
-        border-radius: 12px;
-        background: #f9fafb;
-        border: 1px solid #e5e7eb;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.strength-card {
+  padding: 30px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
 
-    .strength-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+.strength-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 
-    .strength-card .icon {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
-    }
+.strength-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #184d47; /* forest green accent */
+}
 
-    .strength-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-        color: #1a202c;
-    }
+.strength-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1a202c;
+}
 
-    .strength-card p {
-        color: #4b5563;
-        line-height: 1.7;
-    }
+.strength-card p {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .strengths {
+    padding: 60px 20px;
+  }
+
+  .strengths h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .strengths-grid {
+    gap: 30px;
+  }
+
+  .strength-card {
+    padding: 25px;
+  }
+
+  .strength-card h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .strengths {
+    padding: 50px 15px;
+  }
+
+  .strengths h2 {
+    font-size: 1.75rem;
+  }
+
+  .strengths-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .strength-card {
+    padding: 20px;
+  }
+
+  .strength-card .icon {
+    font-size: 2rem;
+  }
+
+  .strength-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .strengths {
+    padding: 40px 10px;
+  }
+
+  .strengths h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .strength-card {
+    padding: 18px;
+  }
+
+  .strength-card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .strength-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .strength-card p {
+    font-size: 0.9rem;
+  }
+}

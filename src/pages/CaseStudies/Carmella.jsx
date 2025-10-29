@@ -6,6 +6,8 @@ import CaseStudyNav from "./CaseStudyNav";
 export default function CaseStudy() {
   const [activeSection, setActiveSection] = useState('summary');
 
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   const sections = {
     summary: 'Executive Summary',
     challenge: 'Business Challenge',
@@ -47,21 +49,33 @@ export default function CaseStudy() {
       </div>
 
       {/* Navigation */}
-      <div className="nav-bar">
-        <div className="container">
-          <nav className="nav-container">
-            {Object.entries(sections).map(([key, label]) => (
-              <button
-                key={key}
-                onClick={() => setActiveSection(key)}
-                className={`nav-button ${activeSection === key ? 'active' : ''}`}
-              >
-                {label}
-              </button>
-            ))}
-          </nav>
-        </div>
+
+<div className="nav-bar">
+  <div className="container">
+    <div className="dropdown">
+      <button
+        className="dropdown-button"
+        onClick={() => setDropdownOpen(!dropdownOpen)}
+      >
+        {sections[activeSection]} ▾
+      </button>
+      <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
+        {Object.entries(sections).map(([key, label]) => (
+          <button
+            key={key}
+            onClick={() => {
+              setActiveSection(key);
+              setDropdownOpen(false);
+            }}
+            className={`nav-button ${activeSection === key ? 'active' : ''}`}
+          >
+            {label}
+          </button>
+        ))}
       </div>
+    </div>
+  </div>
+</div>
 
       {/* Content */}
       <div className="content">
