@@ -219,7 +219,7 @@ export default function CaseStudy() {
                     <div className="result-label">Budget cost reduction</div>
                   </div>
                   <div className="result-card">
-                    <div className="result-value">2 Mo</div>
+                    <div className="result-value">2 Month</div>
                     <div className="result-label">MVP delivery timeline</div>
                   </div>
                 </div>

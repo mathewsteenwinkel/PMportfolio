@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import "./CaseStudyNav.css";
 
 export default function CaseStudyNav() {
-  const [offset, setOffset] = useState(70);
+  const [offset, setOffset] = useState(65);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 90) setOffset(50); // compact mode
-      else setOffset(70); // full mode
+      else setOffset(64); // full mode
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

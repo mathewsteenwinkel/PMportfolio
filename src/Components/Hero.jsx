@@ -12,10 +12,7 @@ const Hero = () => {
   );
 
   return (
-    <motion.section
-      className="hero"
-      style={{ backgroundColor: background }}
-    >
+    <motion.section className="hero" style={{ backgroundColor: background }}>
       <motion.div
         className="hero-content"
         initial={{ opacity: 0, y: 20 }}
@@ -23,24 +20,36 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="hero-title">Turning Ideas into Impact</h1>
-        <p className="hero-subtitle">A product manager who bridges strategy, design, and execution. <br/ >
-          I help teams define the right problems, build solutions that matter, and deliver measurable results.
+        <p className="hero-subtitle">
+          A product manager who bridges strategy, design, and execution. <br />
+          I help teams define the right problems, build solutions that matter,
+          and deliver measurable results.
         </p>
-        <motion.button
-          className="hero-button"
-          whileHover={{ scale: 1.05, y: -2 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          Portfolio
-        </motion.button>
-        <motion.button
-          className="hero-button"
-          whileHover={{ scale: 1.05, y: -2 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          Download Resume
-        </motion.button>
+
+        <div className="hero-buttons">
+          {/* Portfolio button */}
+          <motion.a
+            href="#portfolio"
+            className="hero-button"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Portfolio
+          </motion.a>
+
+          {/* Download Resume button */}
+          <motion.a
+            href="/Resume_Mathew_Steenwinkel.pdf"
+            download
+            className="hero-button"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Download Resume
+          </motion.a>
+        </div>
       </motion.div>
+
       <TopoMap />
     </motion.section>
   );

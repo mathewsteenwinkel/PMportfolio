@@ -4,7 +4,6 @@
           --charcoal: #222222;
           --off-white: #FCFCFC;
         }
-
         .skills-container {
           min-height: 100vh;
           background: linear-gradient(135deg, var(--forest-green) 0%, #0d3832 100%);
