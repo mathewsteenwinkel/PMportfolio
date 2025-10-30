@@ -27,20 +27,20 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons">
-          {/* Portfolio button */}
+          {/* Past Work button */}
           <motion.a
-            href="#portfolio"
+            href="#past-work"
             className="hero-button"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
-            Portfolio
+            Past Work
           </motion.a>
 
           {/* Download Resume button */}
           <motion.a
-            href="/Resume_Mathew_Steenwinkel.pdf"
-            download
+            href={`${process.env.PUBLIC_URL}/Resume_Mathew_Steenwinkel.pdf`}
+            download="Mathew_Steenwinkel_Resume.pdf"
             className="hero-button"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.98 }}
